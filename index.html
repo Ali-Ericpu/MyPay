@@ -7,13 +7,14 @@
   function getUA(){
    return navigator.userAgent;
   }
+  wechatURL="https://payapp.weixin.qq.com/qr/AQHBMvPmypp8Ok7LL4aM9zb6?t=GAAG#wechat_pay"
   alipayURL="https://qr.alipay.com/tsx02106fk6gha5fcmzzh9d";//从支付宝收款二维码里得到的URL
   wechat="MicroMessenger";
   alipay = "AlipayClient";
   userAgent = getUA();
   if(userAgent.indexOf(wechat)!=-1){
    //微信
-   window.location.href="static/wechat.png"
+   window.location.href=wechatURL;
   }else if(userAgent.indexOf(alipay)!=-1){
    //支付宝
    window.location.href=alipayURL;
