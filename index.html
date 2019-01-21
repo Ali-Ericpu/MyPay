@@ -12,9 +12,9 @@
   wechat="MicroMessenger";
   alipay = "AlipayClient";
   userAgent = getUA();
-  if(userAgent.indexOf(wechatW)!=-1){
+  if(userAgent.indexOf(wechat)!=-1){
    //微信
-   window.location.href=wechatURL;
+   window.location.href=wechatW;
   }else if(userAgent.indexOf(alipay)!=-1){
    //支付宝
    window.location.href=alipayURL;
